@@ -208,27 +208,11 @@
   dependencies:
     tslib "^2.3.0"
 
-"@angular/platform-server@^17.1.0":
-  version "17.1.0"
-  resolved "https://registry.yarnpkg.com/@angular/platform-server/-/platform-server-17.1.0.tgz#b3278b875f43d55329252290629e03f72c41aa31"
-  integrity sha512-UdP97SMIzNybss2GoFFAQNwSu0XdK0PbY992nDWVhwP8PAWO0aBKiVP6HyuPmw7REkKEd4gTqtQoPrcz+rAfsg==
-  dependencies:
-    tslib "^2.3.0"
-    xhr2 "^0.2.0"
-
 "@angular/router@^17.1.0":
   version "17.1.0"
   resolved "https://registry.yarnpkg.com/@angular/router/-/router-17.1.0.tgz#7b9f1575667573fe62b3dbe90f6945ac21bba414"
   integrity sha512-VDeVLiiS4iEwqwgsLyL9hqA1djFW3yveMnhZIwviJlnp9vG2r/ggMKhNmdP1Hb2iaNgflyhyhwafJ0gi9SLi5A==
   dependencies:
-    tslib "^2.3.0"
-
-"@angular/ssr@^17.1.0":
-  version "17.1.0"
-  resolved "https://registry.yarnpkg.com/@angular/ssr/-/ssr-17.1.0.tgz#face8f5b7a062459d98c7392e1b8659b461402bf"
-  integrity sha512-OUCpAQGMqnlaWmrZfcWQ/cdKROsIndFOtfsiBpJXFU4P95IjYfSZDrSgNDX7syvhnb9K1vv7ymB6UO8S09RuGw==
-  dependencies:
-    critters "0.0.20"
     tslib "^2.3.0"
 
 "@assemblyscript/loader@^0.10.1":
@@ -1732,7 +1716,7 @@
     "@types/range-parser" "*"
     "@types/send" "*"
 
-"@types/express@*", "@types/express@^4.17.13", "@types/express@^4.17.17":
+"@types/express@*", "@types/express@^4.17.13":
   version "4.17.21"
   resolved "https://registry.yarnpkg.com/@types/express/-/express-4.17.21.tgz#c26d4a151e60efe0084b23dc3369ebc631ed192d"
   integrity sha512-ejlPM315qwLpaQlQDTjPdsUFSc6ZsP4AN6AlWnogPjQ7CVi7PYF3YVz+CY3jE2pwYf7E/7HlDAN0rV2GxTG0HQ==
@@ -1785,13 +1769,6 @@
   version "20.11.5"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-20.11.5.tgz#be10c622ca7fcaa3cf226cf80166abc31389d86e"
   integrity sha512-g557vgQjUUfN76MZAN/dt1z3dzcUsimuysco0KeluHgrPdJXkP/XdAURgyO2W9fZWHRtRBiVKzKn8vyOAwlG+w==
-  dependencies:
-    undici-types "~5.26.4"
-
-"@types/node@^18.18.0":
-  version "18.19.8"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-18.19.8.tgz#c1e42b165e5a526caf1f010747e0522cb2c9c36a"
-  integrity sha512-g1pZtPhsvGVTwmeVoexWZLTQaOvXwoSq//pTL0DHeNzUDrFnir4fgETdhjhIxjVnN+hKOuh98+E1eMLnUXstFg==
   dependencies:
     undici-types "~5.26.4"
 
@@ -3085,7 +3062,7 @@ exponential-backoff@^3.1.1:
   resolved "https://registry.yarnpkg.com/exponential-backoff/-/exponential-backoff-3.1.1.tgz#64ac7526fe341ab18a39016cd22c787d01e00bf6"
   integrity sha512-dX7e/LHVJ6W3DE1MHWi9S1EYzDESENfLrYohG2G++ovZrYOkm4Knwa0mc1cn84xJOR4KEU0WSchhLbd0UklbHw==
 
-express@^4.17.3, express@^4.18.2:
+express@^4.17.3:
   version "4.18.2"
   resolved "https://registry.yarnpkg.com/express/-/express-4.18.2.tgz#3fabe08296e930c796c19e3c516979386ba9fd59"
   integrity sha512-5/PsL6iGPdfQ/lKM1UuielYgv3BUoJfz1aUwU9vHZ+J7gyvwdQXFEBIEIaxeGf0GIcreATNyBExtalisDbuMqQ==
@@ -6206,11 +6183,6 @@ ws@~8.11.0:
   version "8.11.0"
   resolved "https://registry.yarnpkg.com/ws/-/ws-8.11.0.tgz#6a0d36b8edfd9f96d8b25683db2f8d7de6e8e143"
   integrity sha512-HPG3wQd9sNQoT9xHyNCXoDUa+Xw/VevmY9FoHyQ+g+rrMn4j6FB4np7Z0OhdTgjx6MgQLK7jwSy1YecU1+4Asg==
-
-xhr2@^0.2.0:
-  version "0.2.1"
-  resolved "https://registry.yarnpkg.com/xhr2/-/xhr2-0.2.1.tgz#4e73adc4f9cfec9cbd2157f73efdce3a5f108a93"
-  integrity sha512-sID0rrVCqkVNUn8t6xuv9+6FViXjUVXq8H5rWOH2rz9fDNQEd4g0EA2XlcEdJXRz5BMEn4O1pJFdT+z4YHhoWw==
 
 y18n@^5.0.5:
   version "5.0.8"
