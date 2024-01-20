@@ -27,7 +27,7 @@
   },
   "private": true,
   "scripts": {
-    "build": "npx tsc && cd ./frontend && npx ng build --configuration=production --output-path=../public && cd ..",
+    "build": "npx tsc && cd ./frontend && yarn && node_modules/.bin/ng build --configuration=production --output-path=../public && cd ..",
     "dev": "prisma db push && nodemon src/index.ts",
     "mongo-start": "docker run -d -p 27017-27019:27017-27019 --name mongo-dev adaptable/mongo-replica-set",
     "mongo-stop": "docker rm -f mongo-dev",

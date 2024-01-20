@@ -22,7 +22,10 @@
             "program": "${workspaceFolder}/dist/index.js",
             "outFiles": [
                 "${workspaceFolder}/**/*.js"
-            ]
+            ],
+            "env": {
+                "ENVIRONMENT": "dev"
+            }
         }
     ]
 }
