@@ -1,14 +1,4 @@
 {
-  "name": "express-prisma-mongo-starter",
-  "version": "0.0.0",
-  "private": true,
-  "license": "MIT",
-  "scripts": {
-    "dev": "prisma db push && nodemon ./src/index",
-    "start": "prisma db push && node ./src/index",
-    "mongo-start": "docker run -d -p 27017-27019:27017-27019 --name mongo-dev adaptable/mongo-replica-set",
-    "mongo-stop": "docker rm -f mongo-dev"
-  },
   "dependencies": {
     "@prisma/client": "^3.14.0",
     "cookie-parser": "~1.4.4",
@@ -20,9 +10,28 @@
     "sanitize-html": "^2.7.0"
   },
   "devDependencies": {
-    "nodemon": "^2.0.16"
+    "@types/cookie-parser": "^1.4.6",
+    "@types/express": "^4.17.21",
+    "@types/morgan": "^1.9.9",
+    "@types/node": "^20.11.5",
+    "@types/sanitize-html": "^2.9.5",
+    "nodemon": "^2.0.22",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3",
+    "prettier": "3.2.4"
   },
+  "license": "MIT",
+  "name": "express-prisma-mongo-starter",
   "nodemonConfig": {
-    "ext": "js,mjs,json,css,html"
-  }
+    "ext": "ts,js,mjs,json,css,html"
+  },
+  "private": true,
+  "scripts": {
+    "build": "npx tsc",
+    "dev": "prisma db push && nodemon src/index.ts",
+    "mongo-start": "docker run -d -p 27017-27019:27017-27019 --name mongo-dev adaptable/mongo-replica-set",
+    "mongo-stop": "docker rm -f mongo-dev",
+    "start": "prisma db push && node dist/index.js"
+  },
+  "version": "0.0.0"
 }
