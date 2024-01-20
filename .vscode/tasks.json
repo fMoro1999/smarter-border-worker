@@ -1,0 +1,12 @@
+{
+    "tasks": [
+        {
+            "type": "npm",
+            "script": "start",
+            "path": "frontend",
+            "problemMatcher": [],
+            "label": "Serve Angular App",
+            "detail": "ng"
+        }
+    ]
+}
